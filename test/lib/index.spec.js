@@ -16,6 +16,7 @@ describe('Point', function() {
       var point = new simple.Point([1, 2]);
       assert.instanceOf(point, simple.Geometry);
       assert.instanceOf(point, simple.Point);
+      assert.strictEqual(point.constructor, simple.Point);
     });
 
   });
@@ -41,6 +42,7 @@ describe('LineString', function() {
       var line = new simple.LineString([[1, 2], [3, 4]]);
       assert.instanceOf(line, simple.Geometry);
       assert.instanceOf(line, simple.LineString);
+      assert.strictEqual(line.constructor, simple.LineString);
     });
 
   });
@@ -67,6 +69,7 @@ describe('Polygon', function() {
           [[[0, 0], [0, 1], [1, 1], [1, 0], [0, 0]]]);
       assert.instanceOf(polygon, simple.Geometry);
       assert.instanceOf(polygon, simple.Polygon);
+      assert.strictEqual(polygon.constructor, simple.Polygon);
     });
 
   });
@@ -93,6 +96,7 @@ describe('MultiPoint', function() {
       var multipoint = new simple.MultiPoint([[1, 2], [3, 4]]);
       assert.instanceOf(multipoint, simple.Geometry);
       assert.instanceOf(multipoint, simple.MultiPoint);
+      assert.strictEqual(multipoint.constructor, simple.MultiPoint);
     });
 
   });
@@ -119,6 +123,7 @@ describe('MultiLineString', function() {
           [[[1, 2], [3, 4]], [[4, 5], [6, 7]]]);
       assert.instanceOf(multiline, simple.Geometry);
       assert.instanceOf(multiline, simple.MultiLineString);
+      assert.strictEqual(multiline.constructor, simple.MultiLineString);
     });
 
   });
@@ -145,6 +150,7 @@ describe('MultiPolygon', function() {
           [[[[0, 0], [0, 1], [1, 1], [1, 0], [0, 0]]]]);
       assert.instanceOf(multipolygon, simple.Geometry);
       assert.instanceOf(multipolygon, simple.MultiPolygon);
+      assert.strictEqual(multipolygon.constructor, simple.MultiPolygon);
     });
 
   });
