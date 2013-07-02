@@ -1,6 +1,6 @@
 {
   "name": "simple-features",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple feature model for working with geospatial data",
   "author": {
     "name": "Tim Schaub",
